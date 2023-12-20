@@ -16,6 +16,7 @@ import EducAssistanceCard from "../components/EducAssistanceCard";
 export default function Faqs() {
   const [openDiv, setOpenDiv] = useState(true);
   const [itemNo, setItemNo] = useState(0);
+  const [hideContent, setHideCOnent] = useState(false);
   const handleOpenDivChange = (value) => {
     setOpenDiv(value);
   };
@@ -44,6 +45,25 @@ export default function Faqs() {
         Go to your nearest DSWD Field Office 
       `,
     },
+    {
+      id: 3,
+      title:
+        "School ID",
+      content: `
+    
+
+      <iframe
+      title="Embedded Content"
+      width="1000"
+      height="1400"
+      src="https://docs.google.com/document/d/1fkU9p_leLZKtnducs1CfM1on9ULk4aSp/edit?usp=sharing&ouid=113249402038119098049&rtpof=true&sd=true"
+      frameBorder="0"
+      allowFullScreen
+    ></iframe>
+      `,
+    },
+
+    
   ];
 
   return (
@@ -118,13 +138,11 @@ export default function Faqs() {
             <div className={`${openDiv ? "hidden" : "block"} `}>
               {contentData.map((item) =>
                 /* item.id === itemNo ? <p key={item.id}>{item.content}</p> : null */
-                item.id === itemNo ? <div key={item.id} dangerouslySetInnerHTML={{ __html: item.content }} /> :  null
-                
+                item.id === itemNo ? <div key={item.id} dangerouslySetInnerHTML={{ __html: item.content }} />  : null
               )}
          
             </div>
           </div>
-       
         </div>
        
       </div>
