@@ -56,7 +56,7 @@ export default function Faqs() {
       title="Embedded Content"
       width="1000"
       height="1400"
-      src="https://docs.google.com/document/d/1fkU9p_leLZKtnducs1CfM1on9ULk4aSp/edit?usp=sharing&ouid=113249402038119098049&rtpof=true&sd=true"
+      src="https://docs.google.com/document/d/1FNrnuCJ9T0ZC4bjCUPklFTbq18RhbxhEArdaSN4qnSA/edit?usp=sharing"
       frameBorder="0"
       allowFullScreen
     ></iframe>
