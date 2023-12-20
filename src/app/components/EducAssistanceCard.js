@@ -23,6 +23,16 @@ export default function EducAssistanceCard({
            
     `,
     },
+
+    {
+      id: 3,
+      title:
+        "How to avail",
+      content: `
+      How to avail assistance from the Assistance to Individuals in
+           
+    `,
+    },
   ],
 }) {
   const handleButtonClick = (categoryId) => {

@@ -8,6 +8,9 @@ import icons from "../../../public/images/icons.png";
 import { MdOutlineMessage } from "react-icons/md";
 import { useState } from "react";
 import Logo from "../../../public/images/Logo.png";
+
+
+
 import EducAssistanceCard from "../components/EducAssistanceCard";
 
 export default function Faqs() {
@@ -44,7 +47,7 @@ export default function Faqs() {
   ];
 
   return (
-    <main className="h-screen flex flex-col items-start justify-start p-12 md:py-14  lg:px-36 ">
+    <main className=" flex flex-col items-start justify-start p-12 md:py-14  lg:px-36 ">
       <header className="flex items-start md:items-center flex-col md:flex-row justify-between w-full mb-4">
         <div className="flex items-center">
           <Image
@@ -117,12 +120,22 @@ export default function Faqs() {
                 /* item.id === itemNo ? <p key={item.id}>{item.content}</p> : null */
                 item.id === itemNo ? <div key={item.id} dangerouslySetInnerHTML={{ __html: item.content }} /> : null
               )}
+
+            <iframe
+                title="Embedded Content"
+                width="900"
+                height="2000"
+                src={"https://docs.google.com/document/d/1bBpCSDtEO82T_mFRLOqHF1u09N-EBZRGvorNwByRCoU/edit?usp=sharing"}
+                allowFullScreen
+              > 
+              </iframe>
             </div>
           </div>
         </div>
       </div>
-
-      <div className="items-center text-red-900 font-semibold flex flex-row   gap-3  w-full mt-12s md:mt-auto">
+     
+    
+      <div className="items-center text-red-900 font-semibold flex flex-row gap-3  w-full mt-12s md:mt-auto">
         <IoIosArrowRoundBack />
         <Link href={"Menu"} className=" text-dark rounded-md mt-auto">
           Back

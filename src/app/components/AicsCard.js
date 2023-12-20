@@ -21,6 +21,16 @@ export default function AicsCard({ categories }) {
           />
           <p className="whitespace-normal text-sm">{category.title}</p>
           <FaArrowRightLong />
+
+          {categories.id == 3 ?   <iframe
+                title="Embedded Content"
+                width="900"
+                height="2000"
+                src={"https://docs.google.com/document/d/1fkU9p_leLZKtnducs1CfM1on9ULk4aSp/edit?usp=sharing&ouid=113249402038119098049&rtpof=true&sd=true"}
+                allowFullScreen
+              > 
+              </iframe> : <></>}
+        
         </Link>
       ))}
     </>
