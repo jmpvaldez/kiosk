@@ -25,7 +25,7 @@ export default function EducAssistanceCard({
     },
 
     {
-      id: 5,
+      id: 3,
       title:
         "How to avail",
       content: `
@@ -78,7 +78,10 @@ export default function EducAssistanceCard({
                     <p key={item.id}>{item.content}</p>
                   </div>
                 </div>
-              ) : <  iframe
+              ) :null
+            )}
+          </main>
+          <  iframe
               title="Embedded Content"
           width="900"
           height="1000"
@@ -86,8 +89,6 @@ export default function EducAssistanceCard({
           allowFullScreen
         > 
         </iframe>
-            )}
-          </main>
         </div>
       ))}
     </>
