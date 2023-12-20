@@ -6,19 +6,20 @@ import { FaSearch } from "react-icons/fa";
 import Logo from "../../../public/images/Logo.png";
 
 
-import A from "../../../public/images/A.png";
-import B from "../../../public/images/B.png";
-import C from "../../../public/images/C.png";
-import D from "../../../public/images/D.png";
-import E from "../../../public/images/E.png";
-import F from "../../../public/images/cart/F.png";
+import A from "../../../public/images/org/A.png";
+import B from "../../../public/images/org/B.jpg";
+import C from "../../../public/images/org/C.png";
+import D from "../../../public/images/org/D.png";
+import E from "../../../public/images/org/E.png";
+import H from "../../../public/images/org/H.png";
+
 
 import G from "../../../public/images/cart/G.png";
-import H from "../../../public/images/cart/H.png";
-import I from "../../../public/images/cart/I.png";
-import J from "../../../public/images/cart/J.png";
-import K from "../../../public/images/cart/K.png";
-import L from "../../../public/images/cart/L.png";
+/* import H from "../../../public/images/cart/H.png"; */
+import I from "../../../public/images/org/I.png";
+import J from "../../../public/images/org/J.png";
+import K from "../../../public/images/org/K.png";
+import L from "../../../public/images/org/L.png";
 //import M from "../../../public/images/cart/M.png";
 import N from "../../../public/images/cart/N.png";
 import O from "../../../public/images/cart/O.png";
@@ -81,88 +82,72 @@ export default function Support() {
             src={B}
             alt="pic"
           />
-          <br /><Image
-            className="object-cover mx-auto"
+          <br />
+
+          <Image
+          className="object-cover mx-auto"
             width={1000}
             height={1000}
             src={C}
             alt="pic"
           />
-          <br /><Image
-            className="object-cover mx-auto"
+          <br />
+          <Image
+          className="object-cover mx-auto"
             width={1000}
             height={1000}
             src={D}
             alt="pic"
           />
-          <br /><Image
-           className="object-cover mx-auto"
-           width={1000}
-           height={1000}
-            src={G}
+          <br />
+          <Image
+          className="object-cover mx-auto"
+            width={1000}
+            height={1000}
+            src={E}
             alt="pic"
           />
           <br />
-
-
           <Image
-           className="object-cover mx-auto"
-           width={1000}
-           height={1000}
+          className="object-cover mx-auto"
+            width={1000}
+            height={1000}
             src={H}
             alt="pic"
           />
-          <br /><Image
-            className="object-cover mx-auto"
+           <Image
+          className="object-cover mx-auto"
             width={1000}
             height={1000}
             src={I}
             alt="pic"
           />
-          <br />{/* <Image
+          <br />
+          <Image
           className="object-cover mx-auto"
-          width={1000}
-          height={1000}
+            width={1000}
+            height={1000}
             src={J}
             alt="pic"
-          /> */}
-          <br /><Image
-            className="object-cover mx-auto"
+          />
+          <br />
+          <Image
+          className="object-cover mx-auto"
             width={1000}
             height={1000}
             src={K}
             alt="pic"
           />
-          <br /><Image
-            className="object-cover mx-auto"
+          <br />
+          <Image
+          className="object-cover mx-auto"
             width={1000}
             height={1000}
             src={L}
             alt="pic"
           />
-         {/*  <br /><Image
-            width={100}
-            height={100}
-            src={M}
-            alt="pic"
-            style={{ width: "auto", height: "auto" }}
-          /> */}
-          <br /><Image
-            className="object-cover mx-auto"
-            width={1000}
-            height={1000}
-            src={N}
-            alt="pic"
-          />
-          <br /><Image
-            className="object-cover mx-auto"
-            width={800}
-            height={800}
-            src={O}
-            alt="pic"
-          />
           <br />
-          
+          <br />
           <hr className="mt-5" />
         
       </div>

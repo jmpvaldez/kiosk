@@ -323,7 +323,7 @@ export default function DirectoryTable() {
             </tr>
             <tr className="bg-white border-b 0">
               <td scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap w-12">
-              Director III under<br/>  the Office of the Undersecretary<br/>  for General Administration<br/>  and Support Services
+              Office of the Assistant Secretary <br/> for Policy and Plans
               </td>
               <td className="px-6 py-4">
               Rodolfo M. Santos, CESO II
