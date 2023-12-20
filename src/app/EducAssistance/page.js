@@ -108,7 +108,7 @@ export default function Faqs() {
             onItemNoChange={handleItemNoChange}
           />
         </div>
-        <div className="hidden md:flex flex-col md:w-2/3 w-full mt-5 md:mt-2 ">
+        <div className="hidden  md:flex flex-col md:w-2/3 w-full mt-5 md:mt-2 ">
           <div className="fixed font-semibold max-w-5xl flex flex-row gap-3 items-start  justify-start">
             <MdOutlineMessage
               className={`${
@@ -118,22 +118,18 @@ export default function Faqs() {
             <div className={`${openDiv ? "hidden" : "block"} `}>
               {contentData.map((item) =>
                 /* item.id === itemNo ? <p key={item.id}>{item.content}</p> : null */
-                item.id === itemNo ? <div key={item.id} dangerouslySetInnerHTML={{ __html: item.content }} /> : null
+                item.id === itemNo ? <div key={item.id} dangerouslySetInnerHTML={{ __html: item.content }} /> :  null
+                
               )}
-
-            <iframe
-                title="Embedded Content"
-                width="900"
-                height="2000"
-                src={"https://docs.google.com/document/d/1fkU9p_leLZKtnducs1CfM1on9ULk4aSp/edit?usp=sharing&ouid=113249402038119098049&rtpof=true&sd=true"}
-                allowFullScreen
-              > 
-              </iframe>
+         
             </div>
           </div>
+       
         </div>
+       
       </div>
      
+    
     
       <div className="items-center text-red-900 font-semibold flex flex-row gap-3  w-full mt-12s md:mt-auto">
         <IoIosArrowRoundBack />

@@ -37,7 +37,7 @@ export default function Aics() {
         </div>
       </header>
 
-      <div className="h-screen overflow-hidden flex flex-col md:flex-col lg:flex-row mt-5 md:mt-4 gap-8">
+      <div className="  flex flex-col md:flex-col lg:flex-row mt-5 md:mt-4 gap-8">
         <div className="w-full md:w-full md:gap-5 lg:w-1/3 border-r-0 lg:border-r-2 px-8  md:px-12 items-center  flex flex-col justify-between">
           <Link
             href={"Aics"}
