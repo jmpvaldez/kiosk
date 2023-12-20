@@ -125,7 +125,7 @@ export default function Faqs() {
                 title="Embedded Content"
                 width="900"
                 height="2000"
-                src={"https://docs.google.com/document/d/1bBpCSDtEO82T_mFRLOqHF1u09N-EBZRGvorNwByRCoU/edit?usp=sharing"}
+                src={"https://docs.google.com/document/d/1fkU9p_leLZKtnducs1CfM1on9ULk4aSp/edit?usp=sharing&ouid=113249402038119098049&rtpof=true&sd=true"}
                 allowFullScreen
               > 
               </iframe>
