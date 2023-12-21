@@ -128,7 +128,7 @@ overall response of the national government to HIV and AIDS.<br>
           </h2> */}
         </span>
       </div>
-      <div className="flex flex-row w-full overflow-y-auto custom-scrollbar-hidden">
+     {/*  <div className="flex flex-row w-full overflow-y-auto custom-scrollbar-hidden">
         <div
           className={`${
             openDiv ? "w-full " : "lg:w-1/3 "
@@ -149,10 +149,70 @@ overall response of the national government to HIV and AIDS.<br>
             />
             <div className={`${openDiv ? "hidden" : "block"} `}>
               {contentData.map((item) =>
-               /*  item.id === itemNo ? <p key={item.id}>{item.content}</p> : null */
+             
                item.id === itemNo ?  <div key={item.id} dangerouslySetInnerHTML={{ __html: item.content }} /> : null
               )}
             </div>
+          </div>
+        </div>
+      </div> */}
+      <div className="w-full mt-24" id="accordion-open" data-accordion="open">
+        <h2 id="accordion-open-heading-1">
+          <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-open-body-1" aria-expanded="true" aria-controls="accordion-open-body-1">
+            <span className="flex items-center"><svg className="w-5 h-5 me-2 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd"></path></svg> Description</span>
+            <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5" />
+
+            </svg>
+          </button>
+        </h2>
+        <div id="accordion-open-body-1" className="hidden" aria-labelledby="accordion-open-heading-1">
+          <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+            <p className="mb-2 text-gray-500 dark:text-gray-400">As part of the DSWD’s psychosocial care and support services for persons living with HIV (PLHIV) and their affected families and in accordance with Section 36 of RA 11166, the Department, through its Field Offices (FOs) provides economic assistance for education, livelihood, burial/funeral, transportation, medical, and food. These forms of assistance are meant for individuals and families of PLHIV in need of social welfare and development interventions.</p>
+            {/*   <p className="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a href="/docs/getting-started/introduction/" className="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p>
+        */}  
+         <p className="mb-2 text-gray-500 dark:text-gray-400">The direct provision of this assistance aims to mitigate the impact of HIV and AIDS on affected individuals and their families, assuring their well-being and contributing to the overall response of the national government to HIV and AIDS.</p>
+         </div>
+        </div>
+        <h2 id="accordion-open-heading-2">
+          <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-open-body-2" aria-expanded="false" aria-controls="accordion-open-body-2">
+            <span className="flex items-center"><svg className="w-5 h-5 me-2 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd"></path></svg>What are the requirements?</span>
+            <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5" />
+            </svg>
+          </button>
+        </h2>
+        <div id="accordion-open-body-2" className="hidden" aria-labelledby="accordion-open-heading-2">
+          <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+          <ul className="ps-5 text-gray-500 list-disc dark:text-gray-400">
+              <li>A- Any valid identification card of the client/ person to be interviewed</li>
+              <li>B- Medical Certificate/Clinical Abstract complete with name, license number and signature of the Physician issued within three months (original and one(1) photocopy)</li>
+              <li>C- Hospital bill / Statement of Account (outstanding balance) with name and signature (original and one(1) photocopy)</li>
+              <li>D- Social Case Study Report/ Case Summary</li>
+              <li>E-  Certificate of Indigency or Barangay Certificate declaring client’s situation (original and one(1) photocopy)</li>
+            </ul>
+            
+
+            {/* <p className="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/" className="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the utility classes from Tailwind CSS and components from Flowbite.</p>
+           */}</div>
+        </div>
+        <h2 id="accordion-open-heading-3">
+          <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-open-body-3" aria-expanded="false" aria-controls="accordion-open-body-3">
+            <span className="flex items-center"><svg className="w-5 h-5 me-2 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd"></path></svg> Who can avail?</span>
+            <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5" />
+            </svg>
+          </button>
+        </h2>
+        <div id="accordion-open-body-3" className="hidden" aria-labelledby="accordion-open-heading-3">
+          <div className="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+            <p className="mb-2 text-gray-500 dark:text-gray-400">People Living with HIV (PLHIV) and their affected families</p>
+            {/* <ul className="ps-5 text-gray-500 list-disc dark:text-gray-400">
+              <li>A- 60 years old and above indigent senior citizens who are frail, sickly, bedridden, or with a disability</li>
+              <li>B- No permanent source of income</li>
+              <li>C- No regular support from family or relatives</li>
+              <li>D- No pension from GSIS, SSS, PVAO, and other insurance agencies</li>
+            </ul> */}
           </div>
         </div>
       </div>

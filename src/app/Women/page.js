@@ -123,7 +123,7 @@ PROVISION OF PPE <br>
           />
         </div>
         <div className="flex items-center">
-         {/*  <input
+          {/*  <input
             type="text"
             className="px-4 py-2 border-b border-gray-300 focus:outline-none bg-transparent"
           />
@@ -142,7 +142,7 @@ PROVISION OF PPE <br>
           <Image
             width={80}
             height={80}
-            src={"/images/women.png"} 
+            src={"/images/women.png"}
             alt="pic"
             style={{ width: "auto", height: "auto" }}
           />
@@ -160,7 +160,7 @@ PROVISION OF PPE <br>
           </h2> */}
         </span>
       </div>
-      <div className="flex flex-row w-full overflow-y-auto custom-scrollbar-hidden">
+      {/*  <div className="flex flex-row w-full overflow-y-auto custom-scrollbar-hidden">
         <div
           className={`${
             openDiv ? "w-full " : "lg:w-1/3 "
@@ -181,10 +181,98 @@ PROVISION OF PPE <br>
             />
             <div className={`${openDiv ? "hidden" : "block"} `}>
               {contentData.map((item) =>
-               /*  item.id === itemNo ? <p key={item.id}>{item.content}</p> : null */
+            
                item.id === itemNo ?  <div key={item.id} dangerouslySetInnerHTML={{ __html: item.content }} /> : null
               )}
             </div>
+          </div>
+        </div>
+      </div> */}
+
+      <div className="w-full mt-24" id="accordion-open" data-accordion="open">
+        <h2 id="accordion-open-heading-1">
+          <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-open-body-1" aria-expanded="true" aria-controls="accordion-open-body-1">
+            <span className="flex items-center"><svg className="w-5 h-5 me-2 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd"></path></svg> Description</span>
+            <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5" />
+
+            </svg>
+          </button>
+        </h2>
+        <div id="accordion-open-body-1" className="hidden" aria-labelledby="accordion-open-heading-1">
+          <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+            <p className="mb-2 text-gray-500 dark:text-gray-400">Solo parents are those who are left alone with the responsibility of rearing their children regardless of marital status and based on National Statistics Office (NSO) data, there are about 14 million solo parents in the Philippines. The increasing number of solo parents has led the national government to pass Republic Act 8972, or the Solo Parents’ Welfare Act of 2000, which was promulgated on November 7, 2000. While being a solo parent can be difficult, the passage of RA 8972 has somehow made it rewarding. RA 8972 was enacted to provide a comprehensive program of services for solo parents and their children. This law covers fathers or mothers who raise their children by themselves, either because of the death of ,a spouse, abandonment, separation or even those who have children as a result of rape. DSWD is mandated to protect and promote the welfare of the disadvantaged group including the solo parents, provide technical assistance to partner stakeholders (National Government, Local Government Unit, and Civil Society Organizations). Any solo parent whose income in the place of domicile falls equal to or below the poverty threshold as set by the NSCB and subject to the assessment of the duly 145 appointed or designated social worker in the area shall be eligible for assistance: Provided, however, that any solo parent whose income is above the poverty threshold shall enjoy the benefits mentioned in Sections 16, 17, 18, 19, 20, 21 and 23 of these Rules</p>
+            {/*   <p className="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a href="/docs/getting-started/introduction/" className="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p>
+        */}   </div>
+        </div>
+        <h2 id="accordion-open-heading-2">
+          <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-open-body-2" aria-expanded="false" aria-controls="accordion-open-body-2">
+            <span className="flex items-center"><svg className="w-5 h-5 me-2 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd"></path></svg>What are the requirements?</span>
+            <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5" />
+            </svg>
+          </button>
+        </h2>
+        <div id="accordion-open-body-2" className="hidden" aria-labelledby="accordion-open-heading-2">
+          <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+            <h2>Transportation Assistance:</h2>
+            <ol>
+              <li>Valid Solo parent identification card of the client/person to be interviewed;</li>
+              <li>Police Blotter/Police Certification (for victims of pickpockets, illegal recruitment, etc.);</li>
+              <li>Barangay Certificate/Certificate of Residency</li>
+            </ol>
+
+            <h2>Medical Assistance for Hospital Bill:</h2>
+            <ol>
+              <li>Valid Solo parent identification card of the client/person to be interviewed;</li>
+              <li>Medical Certificate/Clinical Abstract complete with name, license number, and signature of the Physician
+                issued within three months (Original/Certified true copy);</li>
+              <li>Hospital bill/Statement of Account (outstanding balance) with name and signature;</li>
+              <li>Social Case Study Report/Case Summary;</li>
+              <li>Barangay Certificate/Certificate of Residency</li>
+            </ol>
+
+            <h2>Medical Assistance for Medicine/Assistive Device:</h2>
+            <ol>
+              <li>Medical Certificate/Clinical Abstract complete with name, license number, and signature of the Physician
+                issued within three months (Original/Certified true copy);</li>
+              <li>Prescription with date of issuance, complete name, license number, and signature of the Physician issued
+                within three months;</li>
+              <li>Valid Solo parent identification card;</li>
+              <li>Social Case Study Report/Case Summary;</li>
+              <li>Barangay Certificate/Certificate of Residency</li>
+            </ol>
+
+            <h2>Medical Assistance for Laboratory Requests:</h2>
+            <ol>
+              <li>Valid Solo parent identification card of the client/person to be interviewed;</li>
+              <li>Medical Certificate/Clinical Abstract complete with name, license number, and signature of the Physician
+                issued within three months (Original/Certified true copy);</li>
+              <li>Laboratory Requests with name, license number, and signature of the Physician;</li>
+              <li>Social Case Study Report/Case Summary;</li>
+              <li>Barangay Certificate/Certificate of Residency</li>
+            </ol>
+
+            {/* <p className="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/" className="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the utility classes from Tailwind CSS and components from Flowbite.</p>
+           */}</div>
+        </div>
+        <h2 id="accordion-open-heading-3">
+          <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-open-body-3" aria-expanded="false" aria-controls="accordion-open-body-3">
+            <span className="flex items-center"><svg className="w-5 h-5 me-2 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd"></path></svg> Who can avail?</span>
+            <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5" />
+            </svg>
+          </button>
+        </h2>
+        <div id="accordion-open-body-3" className="hidden" aria-labelledby="accordion-open-heading-3">
+          <div className="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+            <p className="mb-2 text-gray-500 dark:text-gray-400">ELIGIBLE SOLO PARENTS</p>
+            {/* <ul className="ps-5 text-gray-500 list-disc dark:text-gray-400">
+              <li>A- 60 years old and above indigent senior citizens who are frail, sickly, bedridden, or with a disability</li>
+              <li>B- No permanent source of income</li>
+              <li>C- No regular support from family or relatives</li>
+              <li>D- No pension from GSIS, SSS, PVAO, and other insurance agencies</li>
+            </ul> */}
           </div>
         </div>
       </div>
