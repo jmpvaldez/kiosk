@@ -30,7 +30,7 @@ export default function Featured() {
           <FaSearch className="text-xl" /> */}
            <IoIosArrowRoundBack />
           <Link
-            href={"Menu"}
+            href={"Programs"}
             className=" text-dark rounded-md mt-auto float-right"
           >
             Back
